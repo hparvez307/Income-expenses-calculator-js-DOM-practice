@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+    <header>
+
+    </header>
+
+    <main>
+        <section class="mt-20 mx-auto rounded-2xl bg-slate-800 w-3/5 h-">
+            <div class="text-white   pt-6 ">
+                <div class="mx-auto w-4/5">
+                    <h1 class="text-5xl   text-center font-extrabold ">Income</h1>
+                    <div class="ml-14  py-10 flex ">
+                        <h3 class="text-2xl pr-8">Income:</h3>
+                        <input id="income" class="text-black  rounded  h-12 text-4xl p-3 w-96" placeholder="10000" type="number" min="0">
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-5xl pb-7 text-center font-extrabold">Expense</h1>
+                    <div class="mx-auto py-3 flex w-3/5">
+                        <h3 class="text-2xl mt-2 mr-10">Rent:</h3>
+                        <input id="rent" placeholder="3000" class="text-black p-3  rounded  h-12 text-4xl w-96" type="number" min="0">
+                    </div>
+
+                    <div class="mx-auto py-3 flex w-3/5">
+                        <h3 class="text-2xl mt-2 mr-9">Food:</h3>
+                        <input id="food" placeholder="2000" class="text-black p-3  rounded  h-12 text-4xl w-96" type="number" min="0">
+                    </div>
+
+
+                    <div class="mx-auto py-3 flex w-3/5">
+                        <h3 class="text-2xl mt-2 mr-8">Cloth:</h3>
+                        <input id="cloth" placeholder="500" class="text-black p-3 rounded  h-12 text-4xl w-96" type="number" min="0">
+                    </div>
+
+                    <div class="mx-auto py-3 flex w-3/12">
+                        <button id="calculate-btn" class=" text-3xl rounded mt-6  font-bold px-10 py-3 bg-sky-800">calculate</button>
+                    </div>
+                </div>
+
+                <div class="mx-auto w-2/5 text-center">
+                    <h1 class="text-3xl my-8">Total Expense: <span id="total-expense">5500</span></h1>
+                    <h1 class="text-3xl pb-8">Balance: <span id="balance">4500</span></h1>
+                </div>
+
+
+
+                <div class="py-3 ml-3 flex w-3/5">
+                    <h3 class="text-2xl mt-3 mr-6">Save:</h3>
+                    <input id="parcent" placeholder="20" class=" text-black p-3 rounded mt-2  h-12 text-4xl w-96" type="number" min="0">
+                    <h1 class="text-4xl mt-2 mx-10">%</h1>
+                    <button id="save-btn" class="mb-2 text-3xl rounded px-16 py-3 font-bold  bg-sky-800">save</button>
+                </div>
+
+
+                <div class="mx-auto w-3/5 mb-14 text-center">
+                    <h1 class="text-3xl my-8">Saving Amount: <span id="saving-amount">2000</span></h1>
+                    <h1 class="text-3xl pb-8">Remaining Balance: <span id="last-balance">2500</span></h1>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./moneyMaster.js"></script>
+</body>
+
+</html>
